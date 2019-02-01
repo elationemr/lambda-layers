@@ -1,7 +1,6 @@
 {
   "name": "blue-button-generate",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,6 @@
   "license": "ISC",
   "dependencies": {
     "blue-button-generate-el8": "git+ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/blue-button-generate-el8"
-  }
+  },
+  "description": ""
 }
