@@ -1,15 +1,16 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo Installing Mocha...
-      - cd nodejs/blue-button-generate-el8 && npm install
+  # install:
+  #   commands:
+  #     - echo Installing Mocha...
+  #     - cd nodejs/blue-button-generate-el8 && npm install
   pre_build:
     commands:
       - echo moving stuff
       - ls -la
       - pwd
+      - cd nodejs/blue-button-generate-el8
       - mkdir nodejs
       - cp package.json nodejs
       - cd nodejs
