@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "blue-button-generate-el8": "git+https://github.com/elationemr/blue-button-generate-el8.git"
+    "blue-button-generate-el8": "git+ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/blue-button-generate-el8"
   }
 }
