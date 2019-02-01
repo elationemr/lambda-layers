@@ -30,4 +30,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - nodejs/blue-button-generate-el8/blue-button-generate-el8.zip
+    - blue-button-generate-el8.zip
+  base-directory: nodejs/blue-button-generate-el8/
