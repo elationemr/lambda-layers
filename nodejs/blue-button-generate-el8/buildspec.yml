@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - cd nodejs/blue-button-generate-el8 && mocha HelloWorld.js
+      - mocha HelloWorld.js
   post_build:
     commands:
       - echo Build completed on `date`
