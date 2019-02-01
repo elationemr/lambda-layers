@@ -1,0 +1,14 @@
+{
+  "name": "blue-button-generate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blue-button-generate-el8": "git+https://github.com/elationemr/blue-button-generate-el8.git"
+  }
+}
