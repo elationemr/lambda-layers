@@ -8,13 +8,12 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - cd nodejs/blue-button-generate-el8
-      - npm install unit.js
+      - cd nodejs/blue-button-generate-el8 && npm install unit.js
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha HelloWorld.js
+      - cd nodejs/blue-button-generate-el8 && mocha HelloWorld.js
   post_build:
     commands:
       - echo Build completed on `date`
