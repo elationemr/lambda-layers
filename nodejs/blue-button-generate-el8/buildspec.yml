@@ -30,4 +30,4 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - HelloWorld.js
+    - blue-button-generate-el8.zip
