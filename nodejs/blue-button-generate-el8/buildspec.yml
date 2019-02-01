@@ -4,16 +4,26 @@ phases:
   install:
     commands:
       - echo Installing Mocha...
-      - npm install -g mocha
+      - cd nodejs/blue-button-generate-el8 && npm install
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - cd nodejs/blue-button-generate-el8 && npm install unit.js
+      - echo moving stuff
+      - ls -la
+      - pwd
+      - mkdir nodejs
+      - cp package.json nodejs
+      - cd nodejs
+      - ls -la
+      - pwd
+      - npm install
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha HelloWorld.js
+      - cd ..
+      - ls -la
+      - pwd
+      - zip -r blue-button-generate-el8.zip nodejs
   post_build:
     commands:
       - echo Build completed on `date`
