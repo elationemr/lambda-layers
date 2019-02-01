@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
+      - cd nodejs/blue-button-generate-el8
       - npm install unit.js
   build:
     commands:
