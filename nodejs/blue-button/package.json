@@ -1,0 +1,14 @@
+{
+  "name": "blue-button-el8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blue-button": "git+https://git-codecommit.us-west-2.amazonaws.com/v1/repos/blue-button"
+  }
+}

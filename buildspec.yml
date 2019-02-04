@@ -1,0 +1,36 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - git config --global credential.helper '!aws codecommit credential-helper $@'
+      - git config --global credential.UseHttpPath true
+  pre_build:
+    commands:
+      - echo building dependencies for blue-button-generate-el8
+      - cd nodejs/blue-button-generate-el8
+      - mkdir nodejs
+      - cp package.json nodejs
+      - cd nodejs
+      - npm install
+      - echo building dependencies for blue-button
+      - cd ../../blue-button
+      - mkdir nodejs
+      - cp package.json nodejs
+      - cd nodejs
+      - npm install
+  build:
+    commands:
+      - echo zipping blue-button-generate-el8.zip
+      - cd ../../blue-button-generate-el8
+      - zip -r blue-button-generate-el8.zip nodejs
+      - echo zipping blue-button.zip
+      - cd ../blue-button
+      - zip -r blue-button.zip nodejs
+  # post_build:
+  #   commands:
+  #     - echo Build completed on `date`
+artifacts:
+  files:
+    - nodejs/blue-button-generate-el8/blue-button-generate-el8.zip
+    - nodejs/blue-button-generate-el8/blue-button.zip
